@@ -1,13 +1,9 @@
 {
-    "proxyPort": 80,
-    "urls": [
-        {
-            "src": "domain.com",
-            "target": "http://localhost:3000"
-        },
-        {
-            "src": "subdomain.domain.com.br",
-            "target": "http://localhost:3001"
-        }
-    ]
+	"proxyPort": 80,
+	"urls": [
+		{
+			"src": "frapi.ltoledo.dev",
+			"target": "http://localhost:3003"
+		}
+	]
 }
