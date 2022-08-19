@@ -4,9 +4,9 @@ const express = require("express");
 const redbird = require("redbird");
 const cors = require("cors");
 const httpProxy = require("http-proxy");
+let config = JSON.parse(readFileSync("./config.json", "utf-8"));
 const proxy = redbird({ port: config.proxyPort });
 const app = express();
-let config = JSON.parse(readFileSync("./config.json", "utf-8"));
 let proxies = [];
 
 app.use(
